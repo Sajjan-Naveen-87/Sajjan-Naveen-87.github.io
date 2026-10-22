@@ -41,9 +41,7 @@ ul { list-style: none; }
 
 /* Sidebar */
 .side {
-  position: sticky; top: 0;
-  height: 100vh; height: 100dvh;
-  overflow-y: auto;
+  align-self: start;
   padding: 56px 0 32px;
   display: flex; flex-direction: column; align-items: flex-start;
 }
@@ -59,8 +57,20 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; }
   font-size: 0.9375rem;
 }
 .side nav a:hover { color: var(--link); }
+a, .links li a { touch-action: manipulation; }
 
-.links li a { display: inline-flex; align-items: center; min-height: 36px; font-size: 0.9375rem; }
+.links { display: flex; flex-direction: column; }
+.links li a {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 40px;
+  font-size: 0.9375rem; color: var(--text); text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.links li a span { text-decoration: underline; text-decoration-color: #c4c4c4; text-underline-offset: 3px; }
+.links li a:hover span { color: var(--link); text-decoration-color: currentColor; }
+.icon { width: 18px; height: 18px; flex: none; fill: currentColor; }
+.i-github { color: #181717; }
+.i-linkedin { color: #0a66c2; }
+.i-mail, .i-doc { color: #3c3c3c; }
 
 /* Content rows: label column + body */
 main { padding: 56px 0 0; min-width: 0; }
@@ -106,17 +116,31 @@ h3 a:hover { color: var(--link); }
 
 .footer { padding: 32px 0 48px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.875rem; }
 
+/* Pin the sidebar only when the whole sidebar fits on screen (no nested scrolling) */
+@media (min-width: 1001px) and (min-height: 900px) {
+  .side { position: sticky; top: 0; }
+}
+
+/* Small laptops and landscape tablets: tighter sidebar, stacked dates */
+@media (max-width: 1240px) {
+  :root { --side-w: 248px; --label-w: 110px; }
+  .layout { gap: 48px; padding: 0 32px; }
+  .row { gap: 24px; }
+  .entry { grid-template-columns: 1fr; gap: 2px; }
+  .skills { grid-template-columns: 130px minmax(0, 1fr); }
+}
+
 /* Tablet: sidebar becomes a top header */
 @media (max-width: 1000px) {
   .layout { grid-template-columns: 1fr; gap: 0; padding: 0 24px; }
   .side {
-    position: static; height: auto; overflow: visible; padding: 40px 0 8px;
+    position: static; padding: 40px 0 8px;
     display: grid; grid-template-columns: auto 1fr; column-gap: 24px; align-items: start;
   }
   .photo { grid-row: span 3; width: 112px; margin: 0; }
   .side nav { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 0 20px; border-top: 0; margin: 24px 0 4px; }
   .side nav a { border-bottom: 0; min-height: 44px; }
-  .links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 20px; }
+  .links { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 0 24px; }
   .links li a { min-height: 44px; }
   main { padding-top: 16px; }
   .row:first-child { border-top: 1px solid var(--rule); padding-top: 36px; }
