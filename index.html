@@ -39,158 +39,129 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#main" class="logo" aria-label="S Naveen, home">SN<span>.</span></a>
-      <nav aria-label="Main">
+  <div class="layout">
+    <header class="side">
+      <img class="photo" src="photo.jpg" alt="S Naveen" width="240" height="300">
+      <h1>S Naveen</h1>
+      <p class="role">Backend &amp; Full-Stack Engineer<br>Research Intern, IIT Madras</p>
+      <p class="side-note">B.Tech CSE, IIIT Manipur · 7th semester exchange student at IIT Madras.</p>
+      <nav aria-label="Sections">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
       </nav>
-    </div>
-  </header>
+      <ul class="links">
+        <li><a href="mailto:cs26e010@smail.iitm.ac.in">cs26e010@smail.iitm.ac.in</a></li>
+        <li><a href="https://github.com/Sajjan-Naveen-87" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/s-naveen-6b085b393" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="S_Naveen_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+      </ul>
+    </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero container">
-      <div class="hero-text">
-        <p class="eyebrow">Hi, I'm</p>
-        <h1>S Naveen</h1>
-        <p class="role">Backend &amp; Full-Stack Engineer · Research Intern @ IIT Madras</p>
-        <p class="lead">
-          Computer Science undergraduate at IIIT Manipur working at the intersection of
-          research and production engineering. I take systems from design to production.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="S_Naveen_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-          <a class="btn" href="#contact">Get in touch</a>
+    <main id="main">
+      <section id="about" class="row">
+        <h2>About</h2>
+        <div class="body prose">
+          <p>
+            I'm a Computer Science undergraduate working where research meets production engineering.
+            I'm in my 7th semester as an exchange student and <strong>Research Intern at IIT Madras</strong>,
+            building a biodiversity data pipeline under Prof. KC Sivaramakrishnan at FP Launchpad.
+            I'm also a <strong>Full-Stack Developer at O3Origin</strong>, an AI-powered ed-tech platform.
+          </p>
+          <p>
+            I take systems from design to production, including a live Applicant Tracking System used
+            daily by a hiring company. I'm most interested in backend engineering, distributed systems
+            and data-driven research.
+          </p>
         </div>
-        <div class="socials">
-          <a href="https://github.com/Sajjan-Naveen-87" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/s-naveen-6b085b393" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:cs26e010@smail.iitm.ac.in">Email</a>
+      </section>
+
+      <section id="experience" class="row">
+        <h2>Experience</h2>
+        <div class="body">
+          <article class="entry">
+            <p class="when">2026 – Present</p>
+            <div>
+              <h3>Research Intern (Exchange Student), FP Launchpad, IIT Madras</h3>
+              <p class="meta">CoreStack project · under Prof. KC Sivaramakrishnan ·
+                <a href="https://drive.google.com/file/d/13SPyReJBkqW6iviCUNU7Zj4plMUkRhO_/view?usp=drive_link" target="_blank" rel="noopener">Certificate</a></p>
+              <ul>
+                <li>Selected as an exchange student to work with the FP Launchpad systems research group on CoreStack, focused on scalable systems and infrastructure engineering.</li>
+                <li>Working with faculty and researchers on system design and implementation, bringing rigorous engineering practice to research.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="entry">
+            <p class="when">Feb 2026 – Present</p>
+            <div>
+              <h3>Full-Stack Developer, O3Origin</h3>
+              <p class="meta">Remote</p>
+              <ul>
+                <li>Building an AI-powered study companion for JEE/NEET aspirants end-to-end, powered by Sarvam AI.</li>
+                <li>Led the end-to-end design of the MVP in Python/Django, built for backend scalability.</li>
+                <li>Set up core engineering practices and built the API infrastructure from scratch for fast feature iteration.</li>
+                <li>Built and refined the user-facing interfaces for a smooth learning experience.</li>
+              </ul>
+            </div>
+          </article>
         </div>
-      </div>
-      <div class="hero-photo">
-        <img src="photo.jpg" alt="S Naveen" width="240" height="300">
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section id="about" class="container section">
-      <h2>About me</h2>
-      <p>
-        I'm a B.Tech CSE student at <strong>IIIT Manipur</strong>, now in my 7th semester as an exchange student and
-        <strong>Research Intern at IIT Madras</strong>, building a biodiversity data pipeline under
-        Prof. KC Sivaramakrishnan (FP Launchpad). I'm also a <strong>Full-Stack Developer at O3Origin</strong>,
-        an AI-powered ed-tech platform.
-      </p>
-      <p>
-        I've shipped real systems to production, including a live Applicant Tracking System used daily by a
-        hiring company. I'm passionate about <strong>Backend Engineering</strong>, <strong>Distributed Systems</strong>
-        and <strong>Data-Driven Research</strong>.
-      </p>
-      <div class="stats">
-        <div><span>8.52</span>CPI / 10</div>
-        <div><span>3</span>Production projects</div>
-        <div><span>IITM</span>Research intern</div>
-      </div>
-    </section>
+      <section id="projects" class="row">
+        <h2>Projects</h2>
+        <div class="body projects">
+          <article>
+            <h3><a href="https://fplaunchpad.org/team/" target="_blank" rel="noopener">CoreStack: Biodiversity Data Pipeline</a></h3>
+            <p>Ingests GBIF occurrence records and IUCN Red List conservation data, then computes species richness and endangered-species counts across regions. Built at FP Launchpad, IIT Madras.</p>
+            <p class="stack">Python · GBIF API · IUCN Red List</p>
+          </article>
+          <article>
+            <h3><a href="https://www.o3origin.com/founders" target="_blank" rel="noopener">O3Origin: AI EdTech Platform</a></h3>
+            <p>Backend and system architecture for an AI-native learning platform that gives JEE/NEET aspirants personalized guidance and 24/7 AI mentoring through Sarvam AI.</p>
+            <p class="stack">Python · Django · Sarvam AI</p>
+          </article>
+          <article>
+            <h3><a href="https://recruitart.in/" target="_blank" rel="noopener">RecruitArt: Applicant Tracking System</a></h3>
+            <p>A complete ATS for a healthcare recruitment company, live in production and used daily. Delivered from requirements to deployment: candidate pipelines, job postings and recruiter workflows.</p>
+            <p class="stack">Python · Django · PostgreSQL</p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Experience -->
-    <section id="experience" class="container section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <article class="item">
-          <div class="item-head">
-            <h3>Research Intern (Exchange Student) — FP Launchpad, IIT Madras</h3>
-            <span class="date">2026 – Present</span>
-          </div>
-          <p class="sub">CoreStack Project · under Prof. KC Sivaramakrishnan ·
-            <a href="https://drive.google.com/file/d/13SPyReJBkqW6iviCUNU7Zj4plMUkRhO_/view?usp=drive_link" target="_blank" rel="noopener">Certificate</a></p>
-          <ul>
-            <li>Selected as an exchange student to work with the FP Launchpad systems research group on the CoreStack project, focused on scalable systems and infrastructure engineering.</li>
-            <li>Collaborating with faculty and researchers on system design and implementation, applying rigorous engineering practices in a research setting.</li>
-          </ul>
-        </article>
-        <article class="item">
-          <div class="item-head">
-            <h3>Full-Stack Developer — O3Origin</h3>
-            <span class="date">Feb 2026 – Present</span>
-          </div>
-          <p class="sub">Remote</p>
-          <ul>
-            <li>Building an AI-powered study companion for JEE/NEET aspirants end-to-end, powered by Sarvam AI.</li>
-            <li><strong>System Architecture:</strong> led the end-to-end design of the MVP using Python/Django for robust backend scalability.</li>
-            <li><strong>Backend:</strong> established core engineering best practices and built the API infrastructure from scratch.</li>
-            <li><strong>Frontend &amp; UI/UX:</strong> built and refined user-facing interfaces for a smooth learning experience.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section id="skills" class="row">
+        <h2>Skills</h2>
+        <dl class="body skills">
+          <dt>Languages</dt><dd>Python (advanced), C++, C, Java, SQL</dd>
+          <dt>Backend</dt><dd>Django, Django REST Framework, API design, system design</dd>
+          <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, RDS), Docker, GitHub Actions, Nginx, Linux</dd>
+          <dt>Core concepts</dt><dd>Data structures &amp; algorithms, DBMS, OOP, OS concurrency, distributed systems</dd>
+          <dt>Research</dt><dd>GBIF and IUCN Red List APIs, data ingestion and normalization, biodiversity metrics, exploratory data analysis, reproducible pipelines</dd>
+        </dl>
+      </section>
 
-    <!-- Projects -->
-    <section id="projects" class="container section">
-      <h2>Key projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>CoreStack — Biodiversity Data Pipeline</h3>
-          <p>Data pipeline at FP Launchpad, IIT Madras that ingests GBIF occurrence records and IUCN Red List conservation data, then computes species richness and endangered-species counts across regions.</p>
-          <div class="tags"><span>Python</span><span>GBIF API</span><span>IUCN Red List</span></div>
-          <a href="https://fplaunchpad.org/team/" target="_blank" rel="noopener">Team page →</a>
-        </article>
-        <article class="card">
-          <h3>O3Origin — AI EdTech Platform</h3>
-          <p>Backend and system architecture for an AI-native learning platform giving JEE/NEET aspirants personalized guidance and 24/7 AI mentoring, with Sarvam AI powering conversational tutoring.</p>
-          <div class="tags"><span>Python</span><span>Django</span><span>Sarvam AI</span></div>
-          <a href="https://www.o3origin.com/founders" target="_blank" rel="noopener">Website →</a>
-        </article>
-        <article class="card">
-          <h3>RecruitArt — Applicant Tracking System</h3>
-          <p>Complete ATS for a healthcare recruitment company, live in production and used daily. Delivered end-to-end, from requirements to deployment: candidate pipelines, job postings and recruiter workflows.</p>
-          <div class="tags"><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
-          <a href="https://recruitart.in/" target="_blank" rel="noopener">Website →</a>
-        </article>
-      </div>
-    </section>
+      <section id="education" class="row">
+        <h2>Education</h2>
+        <div class="body">
+          <article class="entry">
+            <p class="when">2023 – 2027</p>
+            <div><h3>Indian Institute of Information Technology, Manipur</h3><p class="meta">B.Tech, Computer Science &amp; Engineering · CPI 8.52 / 10</p></div>
+          </article>
+          <article class="entry">
+            <p class="when">7th semester – Present</p>
+            <div><h3>Indian Institute of Technology Madras</h3><p class="meta">Exchange student · Research internship, FP Launchpad</p></div>
+          </article>
+          <article class="entry">
+            <p class="when">Class XII</p>
+            <div><h3>Jawahar Navodaya Vidyalaya, Yadgir</h3><p class="meta">Higher secondary education</p></div>
+          </article>
+        </div>
+      </section>
 
-    <!-- Skills -->
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div><h3>Languages</h3><p class="chips"><span>Python (Advanced)</span><span>C++</span><span>C</span><span>Java</span><span>SQL</span></p></div>
-        <div><h3>Backend</h3><p class="chips"><span>Django</span><span>Django REST Framework</span><span>API Design</span><span>System Design</span></p></div>
-        <div><h3>Cloud &amp; DevOps</h3><p class="chips"><span>AWS (EC2, RDS)</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span><span>Linux</span></p></div>
-        <div><h3>Core Concepts</h3><p class="chips"><span>DSA</span><span>DBMS</span><span>OOP</span><span>OS Concurrency</span><span>Distributed Systems</span></p></div>
-        <div><h3>Research</h3><p class="chips"><span>GBIF &amp; IUCN APIs</span><span>Data normalization</span><span>Biodiversity metrics</span><span>EDA</span><span>Reproducible pipelines</span></p></div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="container section">
-      <h2>Education</h2>
-      <div class="edu">
-        <div class="edu-row"><div><h3>IIIT Manipur</h3><p>B.Tech, Computer Science &amp; Engineering · CPI 8.52/10</p></div><span class="date">2023 – 2027</span></div>
-        <div class="edu-row"><div><h3>IIT Madras</h3><p>Exchange Student · Research Internship (FP Launchpad)</p></div><span class="date">7th Semester – Present</span></div>
-        <div class="edu-row"><div><h3>Jawahar Navodaya Vidyalaya, Yadgir</h3><p>Class XII · Higher Secondary Education</p></div></div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="container section contact">
-      <h2>Let's connect</h2>
-      <p>Open to backend, systems and research opportunities. The fastest way to reach me is email.</p>
-      <div class="buttons center">
-        <a class="btn primary" href="mailto:cs26e010@smail.iitm.ac.in">cs26e010@smail.iitm.ac.in</a>
-        <a class="btn" href="https://www.linkedin.com/in/s-naveen-6b085b393" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/Sajjan-Naveen-87" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer">© <span id="year"></span> S Naveen</footer>
+      <footer class="footer">© <span id="year"></span> S Naveen · <a href="mailto:cs26e010@smail.iitm.ac.in">Email me</a></footer>
+    </main>
+  </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
