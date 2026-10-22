@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sajjan-naveen-87.github.io/sitemap.xml
